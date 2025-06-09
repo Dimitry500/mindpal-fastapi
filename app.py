@@ -22,7 +22,7 @@ def get_reviews():
         conn = pyodbc.connect(conn_str)
         cursor = conn.cursor()
 
-        query = "SELECT * FROM [dbo].[rpt_SEND_reviews]"
+        query = "SELECT * FROM [dbo].[Sales]"
         cursor.execute(query)
 
         columns = [column[0] for column in cursor.description]

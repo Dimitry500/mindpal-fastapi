@@ -6,6 +6,8 @@ app = FastAPI()
 
 SQL_SERVER = os.getenv("SQL_SERVER", "localhost")
 SQL_DATABASE = os.getenv("SQL_DATABASE", "SalesTestDB")
+SQL_USER = os.getenv("SQL_USER")
+SQL_PASSWORD = os.getenv("SQL_PASSWORD")
 
 conn_str = (
     f"DRIVER={{ODBC Driver 17 for SQL Server}};"

@@ -10,8 +10,8 @@ SQL_DATABASE = os.getenv("SQL_DATABASE", "SalesTestDB")
 conn_str = (
     f"DRIVER={{ODBC Driver 17 for SQL Server}};"
     f"SERVER={SQL_SERVER};"
-    f"DATABASE={SQL_DATABASE};"
-    f"Trusted_Connection=yes;"
+    f"UID={SQL_USER};"
+    f"PWD={SQL_PASSWORD};"
 )
 
 @app.get("/reviews")
